@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Konfiguracja Przełącznika D-Link</title>
+</head>
+<body>
+
+<h2>Konfiguracja Przełącznika D-Link</h2>
+
+<form>
+  <label for="ipAddress">Adres IP Przełącznika:</label>
+  <input type="text" id="ipAddress" name="ipAddress"><br><br>
+
+  <label for="username">Nazwa użytkownika:</label>
+  <input type="text" id="username" name="username"><br><br>
+
+  <label for="password">Hasło:</label>
+  <input type="password" id="password" name="password"><br><br>
+
+  <button type="button" onclick="configureSwitch()">Konfiguruj</button>
+</form>
+
+<p id="result"></p>
+
+<script>
+function configureSwitch() {
+  var ipAddress = document.getElementById("ipAddress").value;
+  var username = document.getElementById("username").value;
+  var password = document.getElementById("password").value;
+  
+  // Tutaj możesz dodać kod JavaScript, który wysyła zapytanie do przełącznika D-Link 
+  // w celu konfiguracji za pomocą podanych danych.
+  
+  // Po otrzymaniu odpowiedzi możesz wyświetlić wynik na stronie.
+  document.getElementById("result").innerHTML = "Przełącznik skonfigurowany pomyślnie!";
+}
+</script>
+
+</body>
+</html>
