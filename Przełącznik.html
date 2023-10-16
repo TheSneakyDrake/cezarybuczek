@@ -1,40 +1,40 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-  <title>Konfiguracja Domyślnego Przełącznika D-Link</title>
+<meta charset="utf-8">
+<meta name="description" content="Lokalne sieci komputerowe>"
+<title>Cezary Buczek kl.2TIF</title>
 </head>
 <body>
+<center><h1>Przełącznik D-link</h1></center>
+<p>Opis Przełącznika D-Link:</p>
 
-<h2>Konfiguracja Domyślnego Przełącznika D-Link</h2>
+<p>Przełącznik D-Link to urządzenie sieciowe, które pozwala na efektywne zarządzanie ruchem sieciowym. Działając na warstwie drugiej modelu OSI (warstwa łącza danych), przełącznik przesyła dane tylko do odpowiednich urządzeń docelowych w sieci lokalnej (LAN), co zwiększa wydajność i bezpieczeństwo sieci.
+</p>
+<p>Jak Konfigurować Przełącznik D-Link:</p>
+<p>1. Połączenie Sprzętowe:</p>
+<p>Upewnij się, że wszystkie urządzenia są prawidłowo podłączone do przełącznika za pomocą kabli Ethernet. Sprawdź, czy urządzenia są podłączone do odpowiednich portów.
+</p>
+<p>2. Połączenie z Przełącznikiem:</p>
+<p>Połącz swój komputer z przełącznikiem za pomocą kabla Ethernet lub bezprzewodowo (jeśli przełącznik obsługuje funkcję Wi-Fi).
+</p>
+<p>3. Znalezienie Adresu IP Przełącznika:</p>
+<p>Aby skonfigurować przełącznik, znajdź jego adres IP. Standardowy adres IP dla większości przełączników D-Link to 192.168.0.1 lub 192.168.1.1.
+</p>
+<p>4. Zalogowanie do Interfejsu Zarządzania:</p>
+<p>Wprowadź adres IP przełącznika do przeglądarki internetowej. Zaloguj się do interfejsu zarządzania, używając domyślnej nazwy użytkownika i hasła. (Domyślne dane logowania znajdziesz w dokumentacji urządzenia.)
+</p>
+<p>5. Zabezpieczenia i Konfiguracje:</p>
+<p>Po zalogowaniu się, zmień domyślne hasło, aby zabezpieczyć dostęp do przełącznika. Następnie możesz skonfigurować różne ustawienia, takie jak VLAN-y, Quality of Service (QoS), port forwarding, itp., w zależności od Twoich potrzeb.
+</p>
+<p>6. Zapisanie Konfiguracji:</p>
+<p>Po dokonaniu zmian, zapisz konfigurację. Przełącznik może wymagać ponownego uruchomienia, aby zmiany zaczęły obowiązywać.
+</p>
 
-<form onsubmit="return false;">
-  <label for="ipAddress">Adres IP Przełącznika:</label>
-  <input type="text" id="ipAddress" name="ipAddress" placeholder="Wprowadź adres IP"><br><br>
 
-  <label for="username">Nazwa użytkownika:</label>
-  <input type="text" id="username" name="username" placeholder="Wprowadź nazwę użytkownika"><br><br>
 
-  <label for="password">Hasło:</label>
-  <input type="password" id="password" name="password" placeholder="Wprowadź hasło"><br><br>
 
-  <button type="button" onclick="configureSwitch()">Konfiguruj</button>
-</form>
 
-<p id="result"></p>
 
-<script>
-function configureSwitch() {
-  var ipAddress = document.getElementById("ipAddress").value;
-  var username = document.getElementById("username").value;
-  var password = document.getElementById("password").value;
-
-  // Tutaj możesz dodać kod JavaScript, który wysyła zapytanie do przełącznika D-Link 
-  // w celu konfiguracji za pomocą podanych danych.
-  
-  // Po otrzymaniu odpowiedzi możesz wyświetlić wynik na stronie.
-  document.getElementById("result").innerHTML = "Przełącznik skonfigurowany pomyślnie!";
-}
-</script>
-
-</body>
+  </body>
 </html>
