@@ -51,8 +51,84 @@
 <ol>
     <h1>Konfiguracja Serwera www</h1>
     <li>Podczaskonfiguracji serwera www postępujemy praktycznie tak samo jak podczas konfiguracji serwera ftp ale jednak te dwa procesy się rożnią o to jak krok po kroku stworzyć serwer www w menadżerze serwera:</li>
-    <li></li>
 
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konfiguracja Serwera WWW w Windows</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #3366cc;
+        }
+        p {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Konfiguracja Serwera WWW w Windows</h1>
+
+    <p>Aby skonfigurować serwer WWW za pomocą Menedżera Serwera w systemie Windows, wykonaj następujące czynności:</p>
+
+    <ol>
+        <li><strong>Uruchomienie Menedżera Serwera IIS:</strong>
+           <ul>
+               <li>Otwórz "Panel Sterowania".</li>
+               <li>Wybierz "Programy" > "Funkcje systemu Windows".</li>
+               <li>Kliknij "Włącz lub wyłącz funkcje systemu Windows".</li>
+               <li>Znajdź i zaznacz "Menedżer serwera IIS".</li>
+               <li>Kliknij "OK" i zaczekaj na zainstalowanie Menedżera Serwera IIS.</li>
+           </ul>
+        </li>
+        <li><strong>Dodanie Nowej Witryny:</strong>
+           <ul>
+               <li>Uruchom Menedżer Serwera IIS.</li>
+               <li>W lewej części okna wybierz "Witryny".</li>
+               <li>Kliknij "Dodaj witrynę".</li>
+               <li>Podaj nazwę witryny, ustaw ścieżkę do folderu zawierającego pliki witryny.</li>
+               <li>Wybierz numer portu, na którym witryna będzie dostępna.</li>
+               <li>Kliknij "OK", aby dodać nową witrynę.</li>
+           </ul>
+        </li>
+        <li><strong>Konfiguracja Dostępu do Witryny:</strong>
+           <ul>
+               <li>W Menedżerze Serwera IIS wybierz dodaną witrynę.</li>
+               <li>Kliknij "Autoryzacja dostępu".</li>
+               <li>Wybierz odpowiednią autoryzację, na przykład "Autoryzacja podstawowa".</li>
+               <li>Skonfiguruj uprawnienia dostępu dla użytkowników.</li>
+           </ul>
+        </li>
+        <li><strong>Ustawienia Dodatkowe Witryny:</strong>
+           <ul>
+               <li>Skonfiguruj dodatkowe ustawienia, takie jak obsługa skryptów, obsługa certyfikatów SSL, itp., w zależności od potrzeb projektu.</li>
+           </ul>
+        </li>
+        <li><strong>Testowanie Witryny:</strong>
+           <ul>
+               <li>Uruchom przeglądarkę internetową i wpisz adres witryny wraz z numerem portu.</li>
+               <li>Upewnij się, że witryna jest dostępna i działa zgodnie z oczekiwaniami.</li>
+           </ul>
+        </li>
+        <li><strong>Bezpieczeństwo:</strong>
+           <ul>
+               <li>Zabezpiecz witrynę poprzez używanie certyfikatów SSL.</li>
+               <li>Skonfiguruj reguły zapory ogniowej (firewall) w systemie Windows.</li>
+               <li>Regularnie aktualizuj oprogramowanie serwera i monitoruj logi dla ewentualnych problemów.</li>
+           </ul>
+        </li>
+    </ol>
+
+    <p>Pamiętaj, że powyższe kroki mogą różnić się w zależności od konkretnej wersji Menedżera Serwera IIS. Warto również korzystać z dokumentacji dostarczonej przez Microsoft lub odpowiedniego dostawcę serwera WWW.</p>
+
+</body>
+</html>
     </ol>
 </body>
 </html>
